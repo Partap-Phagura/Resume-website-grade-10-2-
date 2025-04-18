@@ -3,7 +3,6 @@ html {
     position:fixed;
     font-family: Georgia;
     color: #000000;
-    background-color: black;
     position: absolute;
     overflow-y: scroll;
     max-width: fit-content;
@@ -57,5 +56,5 @@ html {
 }
 
 body {
-    background-color: #fffee8;
+    background-color: #000000;
 }
