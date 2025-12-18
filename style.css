@@ -1,88 +1,45 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-  background: #1e1e2f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.chat-container {
-  background: #2c2c3e;
-  width: 400px;
-  max-width: 90%;
-  height: 600px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-  overflow: hidden;
-}
-
-.chat-body {
-  flex: 1;
-  padding: 20px;
+/* --- HELP SECTION --- */
+.help {
+  padding: 14px;
+  background: #0f2c4f;
+  border-top: 2px solid rgba(255,255,255,0.1);
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  max-height: 240px;
 }
 
-.message {
-  padding: 10px 15px;
-  border-radius: 15px;
-  max-width: 80%;
-  word-wrap: break-word;
-  font-size: 14px;
+.help h2 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #bbdefb;
 }
 
-.user-msg {
-  background: #4caf50;
-  color: white;
-  align-self: flex-end;
-  border-bottom-right-radius: 0;
+.help-block {
+  background: #1b3f6b;
+  padding: 10px 12px;
+  border-radius: 14px;
+  margin-bottom: 10px;
 }
 
-.bot-msg {
-  background: #3a3a5c;
-  color: #fff;
-  align-self: flex-start;
-  border-bottom-left-radius: 0;
+.help-block h3 {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  color: #e3f2fd;
 }
 
-.input-area {
-  display: flex;
-  padding: 10px;
-  background: #1e1e2f;
-  border-top: 1px solid #444;
+.help-block p {
+  margin: 0 0 6px;
+  font-size: 0.8rem;
+  opacity: 0.85;
 }
 
-#userInput {
-  flex: 1;
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  font-size: 14px;
-}
-
-#sendBtn {
-  padding: 10px 15px;
-  margin-left: 10px;
-  background: #4caf50;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background 0.3s;
-}
-
-#sendBtn:hover {
-  background: #45a049;
+.help-block code {
+  display: block;
+  background: #0b2a4a;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #a5d6ff;
+  white-space: nowrap;
+  overflow-x: auto;
 }

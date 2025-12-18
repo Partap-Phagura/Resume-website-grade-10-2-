@@ -1,20 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CalcBot - Math Helper</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>CalcBot – Your Math Helper</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="chat-container">
-    <div id="chatBody" class="chat-body"></div>
-    <div class="input-area">
-      <input type="text" id="userInput" placeholder="Ask CalcBot..." />
-      <button id="sendBtn">Send</button>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
+<div class="app">
+  <header>
+    <h1>📐 CalcBot</h1>
+    <p>Your friendly math helper</p>
+  </header>
+
+  <main id="chat" class="chat"></main>
+
+  <footer class="input-area">
+    <input
+      id="userInput"
+      type="text"
+      placeholder="Ask CalcBot a math question…"
+      autocomplete="off"
+    />
+    <button id="sendBtn">Send</button>
+  </footer>
+
+  <!-- 🔽 HOW TO ASK SECTION -->
+  <section class="help">
+    <h2>🧠 How to Ask CalcBot</h2>
+
+    <div class="help-block">
+      <h3>📏 Pythagoras Theorem</h3>
+      <p>Example:</p>
+      <code>Use Pythagoras theorem to solve a=3 b=4 c=?</code>
+    </div>
+
+    <div class="help-block">
+      <h3>📐 Quadratic Formula</h3>
+      <p>Example:</p>
+      <code>Use quadratic formula to solve a=1 b=5 c=6 find x</code>
+    </div>
+
+    <div class="help-block">
+      <h3>📊 Sine Law</h3>
+      <p>(Uppercase = sides, lowercase = angles)</p>
+      <code>Use sine law to solve A=10 B=7 a=30 b=?</code>
+    </div>
+
+    <div class="help-block">
+      <h3>📈 Cosine Law</h3>
+      <p>(Lowercase = sides, Uppercase = angle)</p>
+      <code>Use cosine law to solve a=6 b=8 C=45</code>
+    </div>
+
+    <div class="help-block">
+      <h3>📐 Trigonometry (sin, cos, tan)</h3>
+      <p>Example:</p>
+      <code>Use sin to solve opposite=5 hypotenuse=13</code>
+    </div>
+
+    <div class="help-block">
+      <h3>📝 Practice Questions</h3>
+      <p>Example:</p>
+      <code>Can you give me questions on sine law</code>
+    </div>
+
+    <div class="help-block">
+      <h3>📘 Explanations</h3>
+      <p>Example:</p>
+      <code>Explain the quadratic formula</code>
+    </div>
+
+  </section>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
